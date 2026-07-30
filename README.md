@@ -1,4 +1,4 @@
-<img width="1122" height="1402" alt="image" src="https://github.com/user-attachments/assets/53ae86e2-af65-49c9-a786-19245d7b4a01" /># Expense Management System
+## Expense Management System
 
 A full-stack Expense Management System built using FastAPI, Streamlit, and MySQL for efficient expense tracking and financial analytics.
 
@@ -27,6 +27,16 @@ This project demonstrates the development of a complete expense management appli
 - Dynamic data retrieval and updates
 - Backend logging
 - Unit testing using Pytest
+
+  ## System Architecture
+
+<p align="center">
+  <img src="assets/system_architecture1.png"
+       alt="Expense Management System Architecture"
+       width="100%">
+</p>
+
+The Expense Management System follows a three-tier architecture comprising a Streamlit frontend, a FastAPI backend, and a MySQL database. The frontend communicates with the backend through RESTful APIs, while the backend handles business logic, request validation, CRUD operations, and database interactions. MySQL serves as the persistent storage layer for expense records, categories, transactions, and monthly summaries.
 
 
 
