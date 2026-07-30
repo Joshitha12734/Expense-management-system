@@ -30,15 +30,14 @@ This project demonstrates the development of a complete expense management appli
 
 ## System Architecture
 
-
 <p align="center">
   <img src="assets/system_architecture1.png"
-       alt="System Architecture"
-       width="900">
+       alt="Expense Management System Architecture"
+       width="100%">
 </p>
 
+The Expense Management System follows a three-tier architecture comprising a Streamlit frontend, a FastAPI backend, and a MySQL database. The frontend communicates with the backend through RESTful APIs, while the backend handles business logic, request validation, CRUD operations, and database interactions. MySQL serves as the persistent storage layer for expense records, categories, transactions, and monthly summaries.
 
----
 ## Technology Stack
 
 | Category | Technology |
