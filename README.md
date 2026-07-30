@@ -30,26 +30,8 @@ This project demonstrates the development of a complete expense management appli
 
 ## System Architecture
 
-```
-                +----------------------+
-                |    Streamlit UI      |
-                +----------+-----------+
-                           |
-                     HTTP Requests
-                           |
-                           ▼
-                +----------------------+
-                |   FastAPI Backend    |
-                |   REST API Services  |
-                +----------+-----------+
-                           |
-                     SQL Queries
-                           |
-                           ▼
-                +----------------------+
-                |    MySQL Database    |
-                +----------------------+
-```
+![Uploading image.png…]()
+
 
 ---
 ## Technology Stack
