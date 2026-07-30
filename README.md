@@ -1,6 +1,69 @@
 # Expense Management System
 
-This project is an expense management system that consists of a Streamlit frontend application and a FastAPI backend server.
+A full-stack Expense Management System built using FastAPI, Streamlit, and MySQL for efficient expense tracking and financial analytics.
+
+The application enables users to record daily expenses, manage transactions, and analyze spending patterns through category-wise and monthly expense reports.
+
+---
+
+## Overview
+
+This project demonstrates the development of a complete expense management application consisting of:
+
+- A FastAPI backend exposing REST APIs
+- A Streamlit frontend for an interactive user interface
+- A MySQL database for persistent storage
+- Analytics modules for category-wise and monthly expense summaries
+
+## Features
+
+- Add and update daily expenses
+- View expenses for a selected date
+- Category-wise expense analytics
+- Monthly expense summary
+- RESTful APIs using FastAPI
+- Interactive Streamlit dashboard
+- MySQL database integration
+- Dynamic data retrieval and updates
+- Backend logging
+- Unit testing using Pytest
+
+## System Architecture
+
+```
+                +----------------------+
+                |    Streamlit UI      |
+                +----------+-----------+
+                           |
+                     HTTP Requests
+                           |
+                           ▼
+                +----------------------+
+                |   FastAPI Backend    |
+                |   REST API Services  |
+                +----------+-----------+
+                           |
+                     SQL Queries
+                           |
+                           ▼
+                +----------------------+
+                |    MySQL Database    |
+                +----------------------+
+```
+
+---
+## Technology Stack
+
+| Category | Technology |
+|----------|------------|
+| Language | Python 3 |
+| Backend | FastAPI |
+| Frontend | Streamlit |
+| Database | MySQL |
+| Data Processing | Pandas |
+| API Communication | Requests |
+| Testing | Pytest |
+| Logging | Python Logging |
 
 
 ## Project Structure
@@ -11,23 +74,121 @@ This project is an expense management system that consists of a Streamlit fronte
 - **requirements.txt**: Lists the required Python packages.
 - **README.md**: Provides an overview and instructions for the project.
 
+## REST API Endpoints
 
-## Setup Instructions
+### Get Expenses
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/yourusername/expense-management-system.git
-   cd expense-management-system
-   ```
-1. **Install dependencies:**:   
-   ```commandline
-    pip install -r requirements.txt
-   ```
-1. **Run the FastAPI server:**:   
-   ```commandline
-    uvicorn backend.server:app --reload
-   ```
-1. **Run the Streamlit app:**:   
-   ```commandline
-    streamlit run frontend/app.py
-   ```
+```
+GET /expenses/{expense_date}
+```
+
+Returns all expenses for the specified date.
+
+---
+
+### Add or Update Expenses
+
+```
+POST /expenses/{expense_date}
+```
+
+Creates or updates expenses for the specified date.
+
+---
+
+### Expense Analytics
+
+```
+POST /analytics/
+```
+
+Returns category-wise expense totals and percentage distribution for a given date range.
+
+---
+
+### Monthly Summary
+
+```
+GET /monthly_summary/
+```
+
+Returns aggregated monthly expense statistics.
+
+---
+
+## Installation
+
+### Clone the repository
+
+```bash
+git clone https://github.com/Joshitha12734/Expense-management-system.git
+
+cd Expense-management-system
+```
+
+### Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Configure the database
+
+Create the MySQL database using:
+
+```
+database/expense_db_creation.sql
+```
+
+Update the database credentials inside:
+
+```
+backend/db_helper.py
+```
+
+### Run the FastAPI backend
+
+```bash
+uvicorn backend.server:app --reload
+```
+
+The backend will start at:
+
+```
+http://127.0.0.1:8000
+```
+
+### Run the Streamlit frontend
+
+```bash
+streamlit run frontend/app.py
+```
+
+
+## Future Enhancements
+
+- User authentication
+- Expense deletion
+- Budget planning and alerts
+- Export reports to CSV and PDF
+- Interactive visualizations using Plotly
+- Docker support
+- Cloud deployment
+- Role-based access control
+- Advanced filtering and search
+
+---
+
+## Learning Outcomes
+
+This project demonstrates practical experience in:
+
+- Full-stack Python application development
+- REST API development using FastAPI
+- CRUD operations with MySQL
+- Frontend-backend integration
+- Data aggregation and analytics
+- Interactive dashboard development
+- Software testing using Pytest
+- Logging and exception handling
+- Modular project architecture
