@@ -32,7 +32,7 @@ This project demonstrates the development of a complete expense management appli
 
 
 <p align="center">
-  <img src="assets/system_architecture.png"
+  <img src="assets/system_architecture1.png"
        alt="System Architecture"
        width="900">
 </p>
