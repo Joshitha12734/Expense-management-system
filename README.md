@@ -1,4 +1,4 @@
-# Expense Management System
+<img width="1122" height="1402" alt="image" src="https://github.com/user-attachments/assets/53ae86e2-af65-49c9-a786-19245d7b4a01" /># Expense Management System
 
 A full-stack Expense Management System built using FastAPI, Streamlit, and MySQL for efficient expense tracking and financial analytics.
 
@@ -30,7 +30,12 @@ This project demonstrates the development of a complete expense management appli
 
 ## System Architecture
 
-![Uploading image.png…]()
+
+<p align="center">
+  <img src="assets/system_architecture.png"
+       alt="System Architecture"
+       width="900">
+</p>
 
 
 ---
